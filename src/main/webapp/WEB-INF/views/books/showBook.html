@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="Книга +' '+ ${book.getTitle()}"></title>
+</head>
+<body>
+
+<p th:text="${book.getTitle()}">book</p>
+<p th:text="Автор+' '+${book.getAuthor()}">author</p>
+<p th:text="Издание +' '+ ${book.getYear_book()}">year</p>
+<br/>
+
+<!--<p th:if="${book.isTaken()}"-->
+<!--   th:text="Эта книга уже принадлежить читателю"></p>-->
+
+<!--<div th:switch="${book.getId_person()}">-->
+<!--    <p th:case="null">User is an administrator</p>-->
+<!--    <p th:case="!=null">User is a manager</p>-->
+<!--</div>-->
+
+
+</body>
+</html>
